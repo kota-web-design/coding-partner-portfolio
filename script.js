@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.querySelector(".header");
   const toggle = document.querySelector(".header__toggle");
   const navLinks = document.querySelectorAll(".header__nav a");
+  const contactForm = document.querySelector("#contactForm");
 
   // ハンバーガー開閉
   if (toggle && header) {
@@ -44,5 +45,59 @@ document.addEventListener("DOMContentLoaded", () => {
       document.body.style.overflow = "";
     }
   });
+
+  if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+      const scrollToTarget = () => target.scrollIntoView({ behavior: "auto", block: "start" });
+      setTimeout(scrollToTarget, 300);
+      window.addEventListener("load", () => {
+        setTimeout(scrollToTarget, 800);
+      });
+    }
+  }
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const formData = new FormData(contactForm);
+      const name = String(formData.get("name") || "").trim();
+      const email = String(formData.get("email") || "").trim();
+      const type = String(formData.get("type") || "").trim();
+      const message = String(formData.get("message") || "").trim();
+
+      if (!name || !email || !type || !message) {
+        contactForm.reportValidity();
+        return;
+      }
+
+      const subject = `【コーディング外注のご相談】${type}について`;
+      const body = [
+        "KOTA Web Design 末次様",
+        "",
+        "ポートフォリオサイトを拝見し、コーディング外注について下記内容で相談したくご連絡いたしました。",
+        "",
+        "■ 会社名 / お名前",
+        name,
+        "",
+        "■ メールアドレス",
+        email,
+        "",
+        "■ ご相談内容",
+        type,
+        "",
+        "■ 詳細",
+        message,
+        "",
+        "------------------------------",
+        "送信元：KOTA Web Design コーディング外注ポートフォリオ",
+      ].join("\n");
+
+      const mailtoUrl = `mailto:kota.webdesign.contact@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+      window.location.href = mailtoUrl;
+    });
+  }
 
 });

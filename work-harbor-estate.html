@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>不動産会社ホームページ コーディング実績 | HARBOR ESTATE | KOTA Web Design</title>
+  <meta name="description" content="架空の不動産会社HARBOR ESTATEのコーディング実績。14ページ構成、物件検索UI、売買・賃貸詳細、JavaScriptギャラリー、レスポンシブ対応まで実案件を想定して実装しました。">
+
+  <!-- OGP -->
+  <meta property="og:title" content="HARBOR ESTATE｜不動産会社ホームページ コーディング実績">
+  <meta property="og:description" content="14ページ構成の不動産会社ホームページ実装。物件検索UI、売買・賃貸詳細、フォームUI、レスポンシブ対応まで制作しました。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kota-web-design.github.io/coding-partner-portfolio/work-harbor-estate.html">
+  <meta property="og:image" content="https://kota-web-design.github.io/coding-partner-portfolio/img/harbor-estate.jpg">
+
+  <!-- favicon -->
+  <link rel="icon" href="img/favicon.ico" sizes="64x64" type="image/x-icon">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- フォント -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Noto+Serif+JP:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= Header ================= -->
+<header class="header">
+  <div class="header__inner">
+
+    <p class="header__logo">
+      <a href="index.html">KOTA Web Design</a>
+    </p>
+
+    <button class="header__toggle" aria-label="メニュー開閉">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="header__nav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#works">WORKS</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<!-- ================= Main ================= -->
+<main>
+
+  <!-- ================= Work Detail ================= -->
+  <section class="work">
+    <div class="work__inner">
+
+      <div class="work__back">
+        <a href="index.html#works">← 実装実績一覧に戻る</a>
+      </div>
+
+      <h1 class="work__title">
+        HARBOR ESTATE｜不動産会社ホームページ コーディング実績
+      </h1>
+
+      <div class="work__img">
+        <a href="https://kota-web-design.github.io/harbor-estate-demo/" target="_blank" rel="noopener noreferrer">
+          <img src="img/harbor-estate.jpg" alt="不動産会社ホームページ HARBOR ESTATEのトップページ実装画面" loading="lazy">
+        </a>
+      </div>
+
+      <p class="work__link-note">
+        ※画像クリックで実際のデモサイトをご覧いただけます
+      </p>
+
+      <!-- 概要 -->
+      <div class="work__block">
+        <h2 class="work__heading">概要</h2>
+        <p>
+          福岡県内の主要エリアに対応する架空の不動産会社「HARBOR ESTATE」を想定した、複数ページ構成のホームページ実装です。<br>
+          地域密着感と暮らし提案型の世界観を保ちながら、物件検索・詳細ページ・お問い合わせ導線まで実案件に近い構成で制作しました。
+        </p>
+      </div>
+
+      <!-- 担当範囲 -->
+      <div class="work__block work__scope">
+        <h2 class="work__heading">担当範囲</h2>
+        <ul class="work__scope-list">
+          <li><span>担当範囲</span><strong>HTML / CSS / JavaScript コーディング</strong></li>
+          <li><span>ページ構成</span><strong>TOP・物件一覧・売買詳細・賃貸詳細・会社概要・お問い合わせなど14ページ</strong></li>
+          <li><span>対応内容</span><strong>レスポンシブ対応 / UI実装 / 画像ギャラリー / フォームUI / 公開前チェック</strong></li>
+        </ul>
+      </div>
+
+      <!-- 実装のポイント -->
+      <div class="work__block">
+        <h2 class="work__heading">実装のポイント</h2>
+        <ul class="work__list">
+          <li>買う・借りるの条件切り替えを含む物件検索UIを実装</li>
+          <li>売買物件詳細と賃貸物件詳細で、CTAや物件情報の見せ方を出し分け</li>
+          <li>物件写真のスライダー、サムネイル、モーダル拡大表示をJavaScriptで実装</li>
+          <li>お問い合わせフォーム、FAQアコーディオン、ハンバーガーメニューなど基本UIを実装</li>
+          <li>PC/SPで余白・文字量・ボタンサイズが自然に見えるようレスポンシブ調整</li>
+        </ul>
+      </div>
+
+      <!-- 制作会社様向けの意識 -->
+      <div class="work__block">
+        <h2 class="work__heading">制作会社様向けに意識したこと</h2>
+        <p>
+          見た目の再現だけでなく、後から修正しやすいclass設計、共通パーツの使い回し、画像差し替えのしやすさを意識して実装しています。<br><br>
+          また、スマホ表示では余白・改行・CTAの押しやすさを重点的に調整し、リンク切れ、画像パス、alt属性、フォームUIなども公開前に確認しています。
+        </p>
+      </div>
+
+      <!-- 使用技術 -->
+      <div class="work__block">
+        <h2 class="work__heading">使用技術</h2>
+        <ul class="work__list">
+          <li>HTML（セマンティックなページ構成）</li>
+          <li>CSS（レスポンシブ対応・共通パーツ設計）</li>
+          <li>JavaScript（スライダー・アコーディオン・検索UI・モーダルギャラリー）</li>
+        </ul>
+      </div>
+
+      <!-- CTA -->
+      <div class="work__cta work__cta--double">
+        <a href="https://kota-web-design.github.io/harbor-estate-demo/" target="_blank" rel="noopener noreferrer">
+          デモサイトを見る
+        </a>
+        <a href="index.html#contact" class="work__cta-secondary">
+          コーディングを相談する
+        </a>
+      </div>
+
+      <div class="work__bottom-nav">
+        <a href="index.html#works" class="work__back-btn">
+          実装実績一覧に戻る
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
