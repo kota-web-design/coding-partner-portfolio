@@ -440,8 +440,8 @@ text-align: left;
 /* グリッド */
 .works__grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
 }
 
 /* カード */
@@ -454,9 +454,9 @@ text-align: left;
 }
 
 .works__card--featured {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.65fr);
+  grid-column: auto;
+  display: flex;
+  flex-direction: column;
   border: 1px solid #e8e8e8;
   box-shadow: 0 18px 42px rgba(0, 0, 0, 0.055);
 }
@@ -477,12 +477,13 @@ text-align: left;
 }
 
 .works__card--featured .works__img {
-  border-radius: 16px 0 0 16px;
+  border-radius: 16px 16px 0 0;
+  aspect-ratio: 1200 / 630;
 }
 
 .works__card--featured .works__img img {
   height: 100%;
-  min-height: 360px;
+  min-height: 0;
   object-position: center top;
 }
 
@@ -509,8 +510,9 @@ text-align: left;
 .works__card--featured .works__info {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 34px;
+  justify-content: flex-start;
+  flex: 1;
+  padding: 28px;
 }
 
 .works__category {
@@ -868,7 +870,7 @@ text-align: left;
 }
 
 .work__img {
-  margin-bottom: 70px;
+  margin-bottom: 0;
 }
 
 .work__img img {
@@ -893,7 +895,7 @@ text-align: left;
   color: #aaa;
   text-align: center;
   margin-top: 6px;
-  margin-bottom: 18px;
+  margin-bottom: 70px;
   letter-spacing: 0.05em;
   line-height: 1.6;
 }
@@ -1524,7 +1526,7 @@ text-align: left;
 
   /* 画像 */
   .work__img {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
 
   .work__img img {
@@ -1533,7 +1535,7 @@ text-align: left;
 
   .work__link-note {
     font-size: 11px;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
   }
 
   /* ブロック */

@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (toggle && header) {
     toggle.addEventListener("click", () => {
       header.classList.toggle("open");
+      toggle.setAttribute("aria-expanded", String(header.classList.contains("open")));
 
       if (header.classList.contains("open")) {
         document.body.style.overflow = "hidden";
@@ -23,6 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     navLinks.forEach(link => {
       link.addEventListener("click", () => {
         header.classList.remove("open");
+        toggle?.setAttribute("aria-expanded", "false");
         document.body.style.overflow = "";
       });
     });
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (header && toggle) {
       if (!header.contains(e.target) && header.classList.contains("open")) {
         header.classList.remove("open");
+        toggle.setAttribute("aria-expanded", "false");
         document.body.style.overflow = "";
       }
     }
@@ -42,6 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape" && header) {
       header.classList.remove("open");
+      toggle?.setAttribute("aria-expanded", "false");
       document.body.style.overflow = "";
     }
   });

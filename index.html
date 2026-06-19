@@ -21,7 +21,7 @@
   <meta name="twitter:card" content="summary_large_image">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260619-4">
 
   <!-- フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,14 +43,14 @@
     </p>
 
     <!-- ハンバーガー -->
-    <button class="header__toggle" aria-label="メニュー開閉">
+    <button class="header__toggle" type="button" aria-label="メニュー開閉" aria-expanded="false" aria-controls="globalNav">
       <span></span>
       <span></span>
       <span></span>
     </button>
 
     <!-- ナビ -->
-    <nav class="header__nav" aria-label="グローバルナビゲーション">
+    <nav class="header__nav" id="globalNav" aria-label="グローバルナビゲーション">
       <ul>
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#works">WORKS</a></li>
@@ -135,7 +135,7 @@
       <!-- 実績 -->
       <div class="about__data">
         <h3>実績</h3>
-        <p>自主制作を含むLP・ホームページ実装：15件以上 / 美容・教育・サービス・不動産系など対応</p>
+        <p>自主制作を含むLP・ホームページ実装：15件以上 / 美容・教育・サービス・不動産・士業など対応</p>
       </div>
 
       <!-- スキル -->
@@ -210,6 +210,25 @@
     </p>
 
     <div class="works__grid">
+
+      <!-- 法律事務所HP -->
+      <a href="work-law.html" class="works__card works__card--featured works__card--law">
+        <div class="works__img">
+          <img src="img/work-law.jpg" alt="法律事務所ホームページ 福岡みらい法律事務所のコーディング実績" width="1200" height="630" loading="lazy">
+          <span class="works__link">詳細を見る →</span>
+        </div>
+        <div class="works__info">
+          <span class="works__category">Law Office Website</span>
+          <h3>福岡みらい法律事務所</h3>
+          <p>法律事務所HP / 14ページ構成 / レスポンシブ実装</p>
+          <ul class="works__tags" aria-label="実装内容">
+            <li>共通パーツ設計</li>
+            <li>FAQ UI</li>
+            <li>フォームUI</li>
+            <li>表示・リンク確認</li>
+          </ul>
+        </div>
+      </a>
 
       <!-- 不動産会社HP -->
       <a href="work-harbor-estate.html" class="works__card works__card--featured">
@@ -474,7 +493,7 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=20260619-4"></script>
 </body>
 
 </html>

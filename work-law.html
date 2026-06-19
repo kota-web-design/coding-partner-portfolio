@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>法律事務所ホームページ コーディング実績 | 福岡みらい法律事務所 | KOTA Web Design</title>
+  <meta name="description" content="架空の法律事務所を想定した14ページ構成のコーディング実績。共通パーツ、FAQ、フォームUI、レスポンシブ対応、公開前チェックまで実案件を想定して実装しました。">
+
+  <!-- OGP -->
+  <meta property="og:title" content="福岡みらい法律事務所｜法律事務所ホームページ コーディング実績">
+  <meta property="og:description" content="14ページ構成の法律事務所ホームページ実装。共通パーツ、FAQ、フォームUI、レスポンシブ対応まで制作しました。">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://kota-web-design.github.io/coding-partner-portfolio/work-law.html">
+  <meta property="og:image" content="https://kota-web-design.github.io/coding-partner-portfolio/img/work-law.jpg">
+
+  <link rel="icon" href="img/favicon.ico" sizes="64x64" type="image/x-icon">
+  <link rel="stylesheet" href="style.css?v=20260619-4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Noto+Serif+JP:wght@400;500&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="header__inner">
+    <p class="header__logo">
+      <a href="index.html">KOTA Web Design</a>
+    </p>
+
+    <button class="header__toggle" type="button" aria-label="メニュー開閉" aria-expanded="false" aria-controls="globalNav">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="header__nav" id="globalNav" aria-label="グローバルナビゲーション">
+      <ul>
+        <li><a href="index.html#about">ABOUT</a></li>
+        <li><a href="index.html#works">WORKS</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="work">
+    <div class="work__inner">
+
+      <div class="work__back">
+        <a href="index.html#works">← 実装実績一覧に戻る</a>
+      </div>
+
+      <h1 class="work__title">
+        福岡みらい法律事務所｜<br>法律事務所ホームページ コーディング実績
+      </h1>
+
+      <div class="work__img">
+        <a href="https://kota-web-design.github.io/fukuoka-mirai-law-demo/index.html" target="_blank" rel="noopener noreferrer">
+          <img src="img/work-law.jpg" alt="福岡みらい法律事務所ホームページのトップページ実装画面" width="1200" height="630" loading="lazy">
+        </a>
+      </div>
+
+      <p class="work__link-note">
+        ※画像クリックで実際のデモサイトをご覧いただけます
+      </p>
+
+      <div class="work__block">
+        <h2 class="work__heading">概要</h2>
+        <p>
+          福岡市西新を拠点とする架空の法律事務所「福岡みらい法律事務所」を想定した、14ページ構成のホームページ実装です。<br>
+          専門性と相談しやすさの両方が伝わるデザインを保ちながら、取扱分野・弁護士紹介・費用・解決事例・お問い合わせまで実案件に近い構成で制作しました。
+        </p>
+      </div>
+
+      <div class="work__block work__scope">
+        <h2 class="work__heading">担当範囲</h2>
+        <ul class="work__scope-list">
+          <li><span>担当範囲</span><strong>HTML / CSS / JavaScript コーディング</strong></li>
+          <li><span>ページ構成</span><strong>TOP・取扱分野・弁護士紹介・解決事例・費用・事務所案内・6分野の詳細など14ページ</strong></li>
+          <li><span>対応内容</span><strong>レスポンシブ対応 / FAQ UI / フォームUI / 共通パーツ / 公開前チェック</strong></li>
+        </ul>
+      </div>
+
+      <div class="work__block">
+        <h2 class="work__heading">実装のポイント</h2>
+        <ul class="work__list">
+          <li>全ページ共通のヘッダー・フッター・CTAを再利用しやすい構造で実装</li>
+          <li>取扱分野から6つの詳細ページへ迷わず移動できる導線を実装</li>
+          <li>FAQアコーディオン、スマホメニュー、フォームバリデーションをJavaScriptで実装</li>
+          <li>費用表はPCの表形式から、スマホでは読みやすいカード形式へ切り替え</li>
+          <li>PC/SPで画像比率、余白、改行、CTAサイズが自然に見えるよう調整</li>
+        </ul>
+      </div>
+
+      <div class="work__block">
+        <h2 class="work__heading">制作会社様向けに意識したこと</h2>
+        <p>
+          下層ページが増えても修正箇所を追いやすいよう、共通クラスとページ固有クラスを分けて実装しています。<br><br>
+          また、弁護士名・電話番号・所在地・ナビ表記など、複数ページで表記がずれやすい情報を統一し、リンク切れ、画像パス、alt属性、h1、重複IDまで公開前に確認しています。
+        </p>
+      </div>
+
+      <div class="work__block">
+        <h2 class="work__heading">品質・アクセシビリティ確認</h2>
+        <ul class="work__list">
+          <li>スマホメニューとFAQの開閉状態をARIA属性へ反映</li>
+          <li>キーボード操作時のフォーカス表示とEscキーでのメニュー閉鎖に対応</li>
+          <li>各ページのh1、title、description、OGPを設定</li>
+          <li>デモフォームであることを明記し、実送信されない挙動へ調整</li>
+          <li>PC・スマホの主要画面で横スクロールと表示崩れを確認</li>
+        </ul>
+      </div>
+
+      <div class="work__block">
+        <h2 class="work__heading">使用技術</h2>
+        <ul class="work__list">
+          <li>HTML（セマンティックなページ構成）</li>
+          <li>CSS（共通パーツ設計・レスポンシブ対応・スマホ用費用カード）</li>
+          <li>JavaScript（スマホメニュー・FAQ・フォーム制御）</li>
+        </ul>
+      </div>
+
+      <div class="work__block">
+        <h2 class="work__heading">デモサイトについて</h2>
+        <p>
+          本サイトは、架空の法律事務所を想定したポートフォリオ用デモサイトです。実在の人物・団体・案件とは関係ありません。
+        </p>
+      </div>
+
+      <div class="work__cta work__cta--double">
+        <a href="https://kota-web-design.github.io/fukuoka-mirai-law-demo/index.html" target="_blank" rel="noopener noreferrer">
+          デモサイトを見る
+        </a>
+        <a href="index.html#contact" class="work__cta-secondary">
+          コーディングを相談する
+        </a>
+      </div>
+
+      <div class="work__bottom-nav">
+        <a href="index.html#works" class="work__back-btn">実装実績一覧に戻る</a>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<script src="script.js?v=20260619-4"></script>
+</body>
+</html>
