@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO -->
+    <title>
+      小児科クリニックホームページ コーディング実績 | 姪浜みらいこどもクリニック
+      | KOTA Web Design
+    </title>
+    <meta
+      name="description"
+      content="架空の小児科クリニックを想定した7ページ構成のコーディング実績。共通パーツ、予約導線、デモモーダル、ニュース一覧、レスポンシブ対応、公開前チェックまで実案件を想定して実装しました。"
+    />
+
+    <!-- OGP -->
+    <meta
+      property="og:title"
+      content="姪浜みらいこどもクリニック｜小児科クリニックホームページ コーディング実績"
+    />
+    <meta
+      property="og:description"
+      content="7ページ構成の小児科クリニックホームページ実装。共通パーツ、予約導線、ニュース一覧、レスポンシブ対応まで制作しました。"
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://kota-web-design.github.io/coding-partner-portfolio/work-pediatric-clinic.html"
+    />
+    <meta
+      property="og:image"
+      content="https://kota-web-design.github.io/coding-partner-portfolio/img/work-pediatric-clinic.png"
+    />
+
+    <link rel="icon" href="img/favicon.ico" sizes="64x64" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css?v=20260630-1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&amp;family=Noto+Serif+JP:wght@400;500&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__inner">
+        <p class="header__logo">
+          <a href="index.html">KOTA Web Design</a>
+        </p>
+
+        <button
+          class="header__toggle"
+          type="button"
+          aria-label="メニュー開閉"
+          aria-expanded="false"
+          aria-controls="globalNav"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav
+          class="header__nav"
+          id="globalNav"
+          aria-label="グローバルナビゲーション"
+        >
+          <ul>
+            <li><a href="index.html#about">ABOUT</a></li>
+            <li><a href="index.html#works">WORKS</a></li>
+            <li><a href="index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="work">
+        <div class="work__inner">
+          <div class="work__back">
+            <a href="index.html#works">← 実装実績一覧に戻る</a>
+          </div>
+
+          <h1 class="work__title">
+            姪浜みらいこどもクリニック｜<br />小児科クリニックホームページ
+            コーディング実績
+          </h1>
+
+          <div class="work__img">
+            <a
+              href="https://kota-web-design.github.io/meinohama-mirai-kids-clinic_demo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="img/work-pediatric-clinic.png"
+                alt="姪浜みらいこどもクリニックホームページのトップページ実装画面"
+                width="1200"
+                height="630"
+                loading="lazy"
+              />
+            </a>
+          </div>
+
+          <p class="work__link-note">
+            ※画像クリックで実際のデモサイトをご覧いただけます
+          </p>
+
+          <div class="work__block">
+            <h2 class="work__heading">概要</h2>
+            <p>
+              福岡市西区姪浜の小児科クリニックを想定した、7ページ構成のホームページ実装です。<br />
+              やさしいデザインの世界観を保ちながら、診療案内・予防接種/乳幼児健診・初診案内・アクセス・お知らせまで、実案件に近い構成で制作しました。
+            </p>
+          </div>
+
+          <div class="work__block work__scope">
+            <h2 class="work__heading">担当範囲</h2>
+            <ul class="work__scope-list">
+              <li>
+                <span>担当範囲</span
+                ><strong>HTML / CSS / JavaScript コーディング</strong>
+              </li>
+              <li>
+                <span>ページ構成</span
+                ><strong
+                  >TOP・クリニック紹介・診療案内・予防接種/健診・初診案内・アクセス・お知らせの7ページ</strong
+                >
+              </li>
+              <li>
+                <span>対応内容</span
+                ><strong
+                  >レスポンシブ対応 / 共通パーツ / 予約導線UI / デモモーダル /
+                  公開前チェック</strong
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="work__block">
+            <h2 class="work__heading">実装のポイント</h2>
+            <ul class="work__list">
+              <li>
+                全ページ共通のヘッダー・フッター・SP固定CTAを再利用しやすい構造で実装
+              </li>
+              <li>
+                「WEB予約」「初めての方へ」「予防接種・健診」へ迷わず進める導線を実装
+              </li>
+              <li>
+                予約ボタンは実送信ではなく、ポートフォリオ用デモモーダルとしてJavaScriptで制御
+              </li>
+              <li>
+                お知らせ一覧はWordPress組み込みを想定し、投稿カード・カテゴリ・ページネーションの見た目を実装
+              </li>
+              <li>
+                PC/SPで文章の改行、カード幅、診療時間表、ページ内ナビが自然に見えるよう調整
+              </li>
+            </ul>
+          </div>
+
+          <div class="work__block">
+            <h2 class="work__heading">制作会社様向けに意識したこと</h2>
+            <p>
+              デザインの再現だけでなく、下層ページが増えた場合にも修正しやすいよう、共通クラスとページ固有クラスを分けて実装しています。<br /><br />
+              また、医療系サイトとして誤解を招かないよう、実在の医療機関ではないこと、実際の診療・予約が行われないことを全体で明記しています。公開前チェックとして、リンク切れ、画像パス、alt属性、OGP、横スクロール、コンソールエラーも確認しました。
+            </p>
+          </div>
+
+          <div class="work__block">
+            <h2 class="work__heading">品質・アクセシビリティ確認</h2>
+            <ul class="work__list">
+              <li>スマホメニューの開閉状態をaria-expandedへ反映</li>
+              <li>
+                dialog要素を使った予約デモモーダルと背景クリックでの閉じる動作を実装
+              </li>
+              <li>FV画像はPC/SPで切り替え、表示速度と見え方を調整</li>
+              <li>
+                title、description、OGP、favicon、canonicalなど公開前に必要な基本情報を設定
+              </li>
+              <li>
+                PC・スマホの主要画面で横スクロールとテキストの読みづらい改行を確認
+              </li>
+            </ul>
+          </div>
+
+          <div class="work__block">
+            <h2 class="work__heading">使用技術</h2>
+            <ul class="work__list">
+              <li>HTML（セマンティックなページ構成）</li>
+              <li>CSS（共通パーツ設計・レスポンシブ対応・SP固定CTA）</li>
+              <li>
+                JavaScript（スマホメニュー・予約デモモーダル・スクロールアニメーション）
+              </li>
+            </ul>
+          </div>
+
+          <div class="work__block">
+            <h2 class="work__heading">デモサイトについて</h2>
+            <p>
+              本サイトは、架空の小児科クリニックを想定したポートフォリオ用デモサイトです。実在の医療機関ではなく、実際の診療・予約は行われません。
+            </p>
+          </div>
+
+          <div class="work__cta work__cta--double">
+            <a
+              href="https://kota-web-design.github.io/meinohama-mirai-kids-clinic_demo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              デモサイトを見る
+            </a>
+            <a href="index.html#contact" class="work__cta-secondary">
+              コーディングを相談する
+            </a>
+          </div>
+
+          <div class="work__bottom-nav">
+            <a href="index.html#works" class="work__back-btn"
+              >実装実績一覧に戻る</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js?v=20260619-4"></script>
+  </body>
+</html>
